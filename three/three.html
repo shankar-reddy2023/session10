@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Window</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-container h2 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            font-size: 14px;
+        }
+
+        .form-group input::placeholder {
+            font-size: 13px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .checkbox-group label {
+            color: white;
+            font-size: 13px;
+        }
+
+        .checkbox-group u {
+            cursor: pointer;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .form-group button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Login Window</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" name="email" placeholder="Your Email Address">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Your Password">
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms">
+                <label for="terms">Agree With <u>Terms & Condition</u></label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

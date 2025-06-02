@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidebar Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: flex-start; 
+            height: 100vh;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar a {
+            font-size: 18px;
+            padding: 12px;
+            width: 15px;
+            overflow: hidden;
+            transition: width 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            width: 80px;
+        }
+
+        .green { background-color: green; }
+        .blue { background-color: blue; }
+        .red { background-color: red; }
+        .black { background-color: black; }
+
+        .text-container {
+            margin-left: 20px; 
+        }
+
+        .text-container p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="#" class="green"></a>
+    <a href="#" class="blue"></a>
+    <a href="#" class="red"></a>
+    <a href="#" class="black"></a>
+</div>
+<div class="text-container">
+    <p>Hover over the buttons to expand them.</p>
+    <p>Each button represents a different section.</p>
+    <p>Click to navigate accordingly!</p>
+</div>
+
+</body>
+</html>
